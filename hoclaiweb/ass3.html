@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+</head>
+<body>
+
+  <section class="col-md-12">.
+    <div class="container">
+      <h1 id="food-name">Ten mon an</h1>
+      <img src="#" class="img-thumbnail" id="food-image"/>
+        <h2 id="food-price">Gia Tien</h2>
+        <p id="food-desc">Mo ta</p>
+    </div>
+  </section>
+
+
+
+<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript">
+    $.ajax({
+      url:"https://foodgroup.herokuapp.com/api/food/1",
+      method:"GET",
+      success:function (rs) {
+        var name=rs.data.name;
+        var img=rs.data.image;
+        var price=rs.data.price;
+        var des=rs.data.description;
+        $("#food-name").text(name);
+        $("#food-image").attr("src",img);
+        $("#food-price").text(price);
+        $("#food-desc").text(des);
+      }
+    });
+
+</script>
+</body>
+</html>

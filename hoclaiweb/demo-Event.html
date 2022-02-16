@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+</head>
+<body>
+<!--<h1 onmouseenter="demo_1()" onmouseleave="demo_2()">Demo Event JavaScript</h1>  &lt;!&ndash;onmouseenter di chuot vao h1 /onmouseleave di chuoot ra &ndash;&gt;-->
+<!--<button type="button" onclick="demo()">Nhan vao day de xem thong tin</button> &lt;!&ndash;Click vao button  &ndash;&gt;-->
+<!--<button type="button" ondblclick="demo_2()">Nhan vao day</button>-->
+<!--<button type="button" onclick="demo_3()">Nhan vao </button>-->
+<input  onkeydown="textInput('onkey down')" onkeyup="textInput('onkey up')" onkeypress="textInput('key press')" type="text" name="abc">
+<input type="number" onkeydown="demovalue(this)">
+<select name="city" onchange="demovalue(this)" >
+  <option value="HN">Ha Noi</option>
+  <option value="ND">Nam Dinh</option>
+  <option value="HY">Hung Yen </option>
+</select>
+<input type="text" onkeydown="demo_time(this)">
+
+<h2>Nhap thoi gian dem nguoc</h2>
+<input  name="time" type="number" min="1" onkeypress="demo_time(this)">
+
+<h2>
+  <span id="box-min" class="text-warning">00</span>
+  <span class="text-s">:</span>
+  <span id="box-sec" class="text-info">00</span>
+</h2>
+
+<button type="button" onclick="nhanqua()" class="btn-success" >Click De Nhan Qua</button>
+
+<h1 class="text-warning">Nhap con so may man</h1>
+<input type="number" onkeypress="number(this)" name="number">
+<h2>Phan thuong cua ban la: <span id="qua"></span></h2>
+
+<script type="text/javascript" src="js/demo-event.js"></script>
+
+</body>
+</html>

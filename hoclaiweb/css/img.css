@@ -1,0 +1,24 @@
+.git{
+    float: none;
+    width: 90%;
+    background-color: #0a58ca;
+    margin-left: auto;
+    margin-right: auto;
+}
+.row1{
+    float: left;
+    width: 100%;
+}
+.item{
+    background-color: yellow;
+    float: left;
+    width: calc(25% - 40px);
+    margin: 10px;
+}
+img{
+    max-width: 100%;
+}
+h2{
+    text-align: center;
+    font-size: 90%;
+}
